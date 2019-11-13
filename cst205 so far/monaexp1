@@ -1,0 +1,16 @@
+from PIL import Image
+
+
+
+my_list = []
+
+pic_width = 1700
+
+with open('pixel2', 'r') as f:
+	for line in f:
+	 linelist = f.readlines()
+
+	for x in range(pic_width):
+	 for y in range(x-2):
+	  print(tuple(linelist[x][y:y+3].split()))
+	 	

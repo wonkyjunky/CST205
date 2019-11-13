@@ -1,0 +1,13 @@
+from PIL import Image
+
+with open('pixel2', 'r') as f:
+  for line in f:
+   linelist=f.readlines()
+   
+monaimage = Image.new('L', (18,29))
+monaimage.save('/home/default/dev/cst205/monaimage.jpg')
+im = Image.open('monaimage.jpg')
+for x in linelist:
+ for y in linelist:
+  monaimage.putpixel((x,y),"")
+monaimage.show()

@@ -1,0 +1,6 @@
+hex_values = ['A', 'B', 'C', 'D', 'E', 'F'] 
+decimal_values = [10, 11, 12, 13, 14, 15] 
+hex_lookup = dict(zip(hex_values, decimal_values))
+
+
+print(hex_lookup)
